@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat:wght@300&display=swap');
 
+body {
+    background-color: #f7f5f2;
+}
+
 header {
     display: grid;
     grid-template-columns: 150px 1fr 1fr 1fr;
@@ -85,4 +89,47 @@ footer a {
 
 footer a:hover {
     color: #9a6441;
+}
+
+#mywork-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#object1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#object2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#object3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.object1-p {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 40px;
+    align-self: center;
+}
+
+.object2-p {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 40px;
+    align-self: center;
+}
+
+.object3-p {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 40px;
+    align-self: center;
 }
