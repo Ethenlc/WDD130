@@ -2,6 +2,7 @@
 <html lang="en">
 <body>
     <header>
+        <link rel="stylesheet" href="styles/style.css">
         <a id="logo_link" href="index.html">
             <img class="logo" src="images/carpentry.png" alt="Logo Link">
         </a>
@@ -19,39 +20,43 @@
             <p>I plan on continuing carpentry as a hobby for the rest of my life. I hope it's a skill that I will always continue to develop. If you want to commission me to build something for you, please reach out! I can see what I can do and I'll do it with love. In the mean time, enjoy my website and thank you for looking.</p>
         <section class = "main-pictures">
             <img src="images/wedding.jpg" alt="image for page3">
-            <img src="images/welding.jpg" alt="image for page3">
+            <img src="images/Couchlay.jpg" alt="image for page3">
+            <img src="images/EthenIntroPicture.jpg" alt="image for page3">
         </section>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-        <style>
-        .button {
-          padding: 15px 25px;
-          font-size: 24px;
-          text-align: center;
-          cursor: pointer;
-          outline: none;
-          color: #f7f5f2;
-          background-color: #9a6441;
-          border: none;
-          border-radius: 15px;
-          box-shadow: 0 9px #999;
-        }
-        
-        .button:hover {background-color: #3e3131}
-        
-        .button:active {
-          background-color: #3e3131;
-          box-shadow: 0 5px #666;
-          transform: translateY(4px);
-        }
-        </style>
         </head>
+
         <body>
-        <button class="button">Contact Me</button>
+            <div class="container">
+                <button class="button" onclick="showModal()">Contact Me</button>
+            </div>
+            
+            <div class="modal" id="myModal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <form>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+              
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+              
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+              
+                  <button type="submit">Send Email</button>
+                </form>
+            </div>
+                
+            <script>
+                function showModal() {
+                document.getElementById('myModal').style.display = 'block';
+                }
+            
+                function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+                }
+            </script>
         </body>
-
-
 
         <footer>
             <p>Campbell Carpentry &copy; 2023 - Ethen Campbell</p>
