@@ -2,6 +2,8 @@
 
 body {
     background-color: #f7f5f2;
+    margin: 10px;
+    padding: 10px;
 }
 
 header {
@@ -55,12 +57,14 @@ nav a:hover {
 h2 {
     color: #3e3131;
     font-family: "Bungee", sans-serif;
+    text-align: center;
 }
 
 p {
     color: #3e3131;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .main-pictures img {
@@ -155,12 +159,12 @@ footer a:hover {
     transform: translateY(4px);
 }
 
-.main-pictures {
+.main-pictures2 {
     display: flex;
     justify-content: center;
 }
 
-.main-pictures img {
+.main-pictures2 img {
     width: 30%;
     box-sizing: border-box;
     margin: 0;
